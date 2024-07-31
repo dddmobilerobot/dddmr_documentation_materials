@@ -7,3 +7,7 @@ Use following command to increase mp4 speed by 2X
 ```
 ffmpeg -i input.mp4 -vf "setpts=0.5*PTS" output.mp4
 ```
+Scale down the gif
+```
+ffmpeg -i input.gif -vf "scale=iw/2:ih/2" output.gif
+```
